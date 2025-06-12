@@ -11,7 +11,7 @@ Si basa su PHP, MySQL e HTML/JS.
    ```
 2. Modificare le credenziali nel file `webapp/includes/config.php` secondo la propria installazione.
 3. Copiare la cartella `webapp` su un server Apache con PHP abilitato.
-4. Accedere a `login.php` per autenticarsi. L'utente admin deve creare gli altri utenti tramite la sezione **Utenti**.
+4. Accedere a `login.php` per autenticarsi. Di default è presente l'utente `admin` con password `admin`. L'amministratore può creare gli altri utenti tramite la sezione **Utenti** e cambiare la propria password dalla pagina **Cambia Password**.
 
 ## Funzionalità principali
 
@@ -21,5 +21,6 @@ Si basa su PHP, MySQL e HTML/JS.
 - Votazioni del pubblico per le canzoni eseguite.
 - Inserimento dei voti della giuria con diversi criteri (coinvolgimento, divertimento, tonalità, ritmo, tempo).
 - Gestione categorie di esibizione.
+- Pagina per il cambio password degli utenti.
 
 Il progetto è pensato come base di partenza e può essere esteso a seconda delle esigenze.

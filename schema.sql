@@ -12,6 +12,7 @@ CREATE TABLE users (
   role_id INT NOT NULL,
   FOREIGN KEY (role_id) REFERENCES roles(id)
 );
+INSERT INTO users (username, password, role_id) VALUES ('admin', 'admin', 1);
 
 CREATE TABLE categories (
   id INT AUTO_INCREMENT PRIMARY KEY,

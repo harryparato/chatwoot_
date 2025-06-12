@@ -16,15 +16,21 @@ $user = current_user();
 <body>
     <h1>Benvenuto <?php echo htmlspecialchars($user['username']); ?></h1>
     <nav>
-        <a href="queue.php">Coda</a> |
-        <a href="songs/add.php">Aggiungi Canzone</a> |
-        <a href="vote.php">Vota</a> |
+        <a href="queue.php">Coda</a>
+        <a href="songs/add.php">Aggiungi Canzone</a>
+        <a href="vote.php">Vota</a>
         <?php if ($user['role'] === 'giudice') : ?>
-            <a href="judge.php">Giuria</a> |
+            <a href="judge.php">Giuria</a>
         <?php endif; ?>
         <?php if ($user['role'] === 'admin') : ?>
-            <a href="admin/users.php">Utenti</a> |
+        <div class="dropdown">
+            <button class="dropbtn">Admin ▾</button>
+            <div class="dropdown-content">
+                <a href="admin/users.php">Utenti</a>
+            </div>
+        </div>
         <?php endif; ?>
+        <a href="change_password.php">Cambia Password</a>
         <a href="logout.php">Logout</a>
     </nav>
 </body>
